@@ -1,0 +1,270 @@
+body {
+    position: absolute;
+    font-family: 'Actor';
+    font-size: 22px;
+    background-color: #fff463;
+    background-image: url(Images/circle-scatter-haikei.svg);
+    width: 99vw;
+    height: 1770px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    border: 10px solid black;
+    background-color: #fff463;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Spongebob';
+}
+
+@font-face {
+    font-family: Spongebob;
+    src: url("Fonts/spongeboy-font/SpongeboyRegular-gx2n6.otf") format("opentype");
+}
+
+p {
+    font-size: 32px; 
+}
+
+.left {
+    padding-left: 5%;
+    margin-right: 40%;
+}
+
+.spongebobIMG {
+    height: 400px;
+    width: 400px;
+    margin-top: -2%;
+    margin-right: 5%;
+    float: right;
+}
+
+.section1 {
+    height: 300px;
+}
+
+audio {
+    float: right;
+    margin-right: 11%;
+    margin-top: -10%;
+}
+
+.spongebobHouse {
+    width: 452px;
+    height: 302;
+    border-radius: 30px;
+    margin-left: 6%;
+    margin-top: 1%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    margin-right: 5%;
+}
+
+.left2 {
+    width: 50%;
+    padding-left: 5%;
+    margin-top: 4%;
+}
+
+.spongebobCast {
+    border-radius: 30px;
+    float: right;
+    width: 500px;
+    height: 333px;
+    margin-top: -29%;
+    margin-right: 5%;
+}
+
+@media screen and (min-width: 2500px) {
+    p {
+        font-size: 42px;
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .spongebobIMG {
+        height: 500px;
+        width: 500px;
+        margin-top: -4%;
+        margin-right: 2%;
+    }
+
+    audio {
+        margin-right: 7.5%;
+        margin-top: -1%;
+    }
+    
+
+    .spongebobHouse {
+        width: 552px;
+        height: 402px;
+        margin-left: 5%;
+    }
+
+    .right {
+        width: 62%;
+        margin-top: -15%;
+    }
+
+    .spongebobCast {
+        width: 600px;
+        height: 433px;
+        margin-top: -20%;
+    }
+
+    .left2 {
+        width: 60%;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1900px) {
+    body {
+        width: 98vw;
+    }
+
+    p {
+        font-size: 35px;
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .spongebobIMG {
+        height: 450px;
+        width: 450px;
+        margin-top: -4%;
+        margin-right: 2%;
+    }
+
+    audio {
+        margin-right: 8%;
+        margin-top: -1%;
+    }
+
+    .right {
+        width: 57%;
+        margin-top: -18%;
+    }
+
+    .spongebobHouse {
+        width: 502px;
+        height: 352px;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    .spongebobCast {
+        width: 550px;
+        height: 383px;
+        margin-top: -23%;
+    }
+
+    .left2 {
+        width: 55%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+    body {
+        width: 98vw;
+        height: 1420px;
+
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    
+    .border {
+        width: 80%;
+        height: 1320px;
+        margin-top: 5%;
+
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Spongebob';
+    }
+
+    .spongebobHouse {
+        width: 302px;
+        height: 202px;
+        margin-top: 5%;
+        float: none;
+        margin-left: 3%;
+    }
+
+    .spongebobIMG {
+        height: 150px;
+        width: 150px;
+        float: right;
+        margin-right: 1%;
+    }
+
+    .spongebobCast {
+        width: 290px;
+        height: 183px;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    audio {
+        width: 250px;
+        margin-top: 2%
+    }
+    .left {
+        width: 90%;
+    }
+
+    .right {
+        width: 90%;
+        float: right;
+    }
+
+    .left2 {
+        width: 90%;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 500px) and (orientation: landscape) {
+    .spongebobIMG:hover {
+        animation: rotation 2s infinite linear;
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+}
